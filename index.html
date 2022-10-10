@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer feedback</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+</head>  
+
+<body>
+ 
+
+<h3>Service Feedback</h3>
+
+
+<fieldset>
+  
+    <input placeholder="Your name" type="text" tabindex="1" autofocus> 
+</fieldset>
+
+
+  <fieldset>
+    <select name="Channelofservice" id="Channelofservice">
+
+      <option value="">Channel of transaction</option>
+        <option value="">Branch</option>
+        <option value="">Mobile App</option>
+        <option value="">USSD</option>
+        <option value="">KIKI</option>    
+        <option value="">Coporate Internet banking</option>
+    </select>
+
+</fieldset>
+
+
+   
+    <p>How was our service today?</p>
+
+  
+    <div class="container">
+         <div class="post">
+          <div class="text">Thanks for rating us!</div>
+          
+        </div>
+
+
+        <div class="star-widget">
+          <input type="radio" name="rate" id="rate-5">
+          <label for="rate-5" class="fas fa-star"></label>
+          <input type="radio" name="rate" id="rate-4">
+          <label for="rate-4" class="fas fa-star"></label>
+          <input type="radio" name="rate" id="rate-3">
+          <label for="rate-3" class="fas fa-star"></label>
+          <input type="radio" name="rate" id="rate-2">
+          <label for="rate-2" class="fas fa-star"></label>
+          <input type="radio" name="rate" id="rate-1">
+          <label for="rate-1" class="fas fa-star"></label>
+          
+          <form action="#"> 
+            
+            <div class="textarea">
+
+              <textarea cols="30" placeholder="Describe your experience.."></textarea>
+            </div>
+
+            <div class="btn">
+              <div class="Submit">
+                <button type="Submit">Submit</button>
+              </div>
+            
+            </div>
+
+
+          </form>
+        </div>
+      </div>
+
+
+
+<script>
+  const btn = document.querySelector("button");
+  const submit = document.querySelector(".Submit");
+  const widget = document.querySelector(".star-widget");
+
+  btn.onclick = ()=> {
+    widget.style.display = "none";
+    Submit.style.display = "block";
+  }
+   
+    editBtn.onclick = ()=> {
+      widget.style.display = "block";
+      post.style.display = "none";
+      return false;
+    
+    
+    }
+     
+
+</script>
+
+</body>
+
+</html>
